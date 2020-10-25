@@ -1,0 +1,73 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+html,
+body,
+#viewDiv,
+#container {
+    height: 100%;
+    width: 100%;
+    color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+}
+
+body {
+    background: radial-gradient(#171D20, #030000);
+}
+
+
+#viewDiv canvas {
+    filter: saturate(1.2) drop-shadow(0 0 20px black);
+}
+
+#footer, #header {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+}
+
+#header {
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 0 25px;
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+
+
+h1 {
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: .7;
+}
+
+p {
+    opacity: .6;
+}
+
+.tiny {
+    font-size: .8em;
+}
+
+#total-deaths {
+    color: rgb(228, 0, 0);
+}
+
+#total-recovered {
+    color: rgb(17, 199, 0);
+}
+
+#total-cases {
+    color: rgb(222, 226, 0);
+}

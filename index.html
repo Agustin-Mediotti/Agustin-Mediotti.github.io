@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>COVIDWATCH</title>
+
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css">
+    
+</head>
+
+<body>
+    <div id="header">
+        <h1>COVIDWATCH</h1>
+    </div>
+    <div id="viewDiv"></div>
+        <div id="footer">
+            <p>
+                ACTIVE:
+                <span id="total-cases"></span>
+                <span id="total-count" class="tiny"></span>
+                | 
+                DEATHS:
+                <span id="total-deaths"></span>
+                <span id="mortality-rate" class="tiny">(2.69%)</span>
+                | 
+                RECOVERIES:
+                <span id="total-recovered"></span>
+                <span id="recovery-rate" class="tiny">(73.77%)</span>
+            </p>`
+        </div>
+    
+    <script src="https://js.arcgis.com/4.17/"></script>
+    <script type="module" src="/src/app.js"></script>
+    <script type="module" src="src/services/apiMap.js"></script>
+    <script type="module" src="src/services/apiCovid.js"></script>
+    <script type="module" src="src/services/apiCountries.js"></script>
+</body>
+</html>
